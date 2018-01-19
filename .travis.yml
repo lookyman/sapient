@@ -12,6 +12,7 @@ matrix:
     - php: "nightly"
 
 install:
+    - phpenv config-rm xdebug.ini
     - composer self-update
     - composer update
 
